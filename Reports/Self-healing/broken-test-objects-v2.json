@@ -39,6 +39,16 @@
       "proposedLocatorMethod": "BASIC",
       "recoveryMethod": "BASIC",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Salesforce/Dashboard/Page_New Dashboard  Salesforce/iframe_Show actions_sfxdash-1670340281212-492009_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Salesforce/Account/Accounts_fields_Salesforce/typeofaccount",
+      "brokenLocator": "//*[@title\u003d\u0027${comboboxitem}\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//*[@title\u003d\u0027Other\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

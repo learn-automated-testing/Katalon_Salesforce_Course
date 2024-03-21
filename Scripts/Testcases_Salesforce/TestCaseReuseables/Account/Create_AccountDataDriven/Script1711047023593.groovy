@@ -25,45 +25,52 @@ int rowCount = accountData.getRowNumbers()
 
 // Loop through each row of your test data
 for (int i = 1; i <= rowCount; i++) {
-	// Use data from your test data file
-	String accountName = accountData.getValue('AccountName', i)
-	String site = accountData.getValue('Site', i)
-	String annualRevenue = accountData.getValue('AnnualRevenue', i)
-	String phone = accountData.getValue('Phone', i)
-	String fax = accountData.getValue('Fax', i)
-	String typeOfAccount = accountData.getValue('TypeOfAccount', i)
+    // Use data from your test data file
+    String accountName = accountData.getValue('AccountName', i)
 
-	// Your test steps here, using the variables above
-	WebUI.enhancedClick(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts'))
-	WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/New'))
-	WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Account_name'), accountName)
-	WebUI.delay(1) // Example delay, adjust as necessary
-	WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/account_site'), site)
-	
+    String site = accountData.getValue('Site', i)
 
-	
-	WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'), annualRevenue)
-	
-	WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Phone'), phone)
-	
-	WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), fax)
-	
-	WebUI.scrollToElement(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), 2)
-	
-	WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type'))
-	
-	WebUI.waitForElementClickable(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccount'),
-		20)
-	
-	WebUI.click(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccount'))
-	
-	// Continue for the rest of your fields...
+    String annualRevenue = accountData.getValue('AnnualRevenue', i)
 
-	// After setting all fields, save the account
-	WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save'))
+    String phone = accountData.getValue('Phone', i)
 
-	// Example of verifying account creation, adjust the verification step as needed
-	String accountCreated = WebUI.getText(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d'))
-	println("Account Created: " + accountCreated)
-	// Add your verification logic here
+    String fax = accountData.getValue('Fax', i)
+
+    String typeOfAccount = accountData.getValue('TypeOfAccount', i)
+
+    // Your test steps here, using the variables above
+    WebUI.enhancedClick(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts'))
+
+    WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/New'))
+
+    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Account_name'), accountName)
+
+    WebUI.delay(1 // Example delay, adjust as necessary
+        )
+
+    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/account_site'), site)
+
+    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'), annualRevenue)
+
+    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Phone'), phone)
+
+    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), fax)
+
+    WebUI.scrollToElement(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), 2)
+
+    WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type'))
+
+    WebUI.waitForElementClickable(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccount'), 20)
+
+    WebUI.click(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccount', [('combobox') : typeOfAccount]))
+
+    // Continue for the rest of your fields...
+    // After setting all fields, save the account
+    WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save'))
+
+    // Example of verifying account creation, adjust the verification step as needed
+    String accountCreated = WebUI.getText(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d'))
+
+    println('Account Created: ' + accountCreated) // Add your verification logic here
 }
+
