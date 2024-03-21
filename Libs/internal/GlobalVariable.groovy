@@ -19,6 +19,21 @@ public class GlobalVariable {
      */
     public static Object USERNAME
      
+    /**
+     * <p></p>
+     */
+    public static Object PASSWORD
+     
+    /**
+     * <p></p>
+     */
+    public static Object caseNumber
+     
+    /**
+     * <p></p>
+     */
+    public static Object SKIP_REMAINING_TESTS
+     
 
     static {
         try {
@@ -28,6 +43,9 @@ public class GlobalVariable {
     
             APP_URL = selectedVariables['APP_URL']
             USERNAME = selectedVariables['USERNAME']
+            PASSWORD = selectedVariables['PASSWORD']
+            caseNumber = selectedVariables['caseNumber']
+            SKIP_REMAINING_TESTS = selectedVariables['SKIP_REMAINING_TESTS']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
