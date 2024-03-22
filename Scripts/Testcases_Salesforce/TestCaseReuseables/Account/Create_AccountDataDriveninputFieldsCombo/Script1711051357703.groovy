@@ -43,18 +43,18 @@ for (int i = 1; i <= rowCount; i++) {
 
     WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/New'))
 
-    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Account_name'), accountName)
+	WebUI.setText(findTestObject('Salesforce/Account/Masterdata_fields_Pageobjects/inputfields', [('inputfields') : 'Name']), accountName)
 
-    WebUI.delay(1 // Example delay, adjust as necessary
-        )
+    WebUI.delay(1) // Example delay, adjust as necessary
 
-    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/account_site'), site)
 
-    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'), annualRevenue)
 
-    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/Phone'), phone)
 
-    WebUI.setText(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), fax)
+	WebUI.setText(findTestObject('Salesforce/Account/Masterdata_fields_Pageobjects/inputfields', [('inputfields') : 'Site']), site)
+	WebUI.setText(findTestObject('Salesforce/Account/Masterdata_fields_Pageobjects/inputfields', [('inputfields') : 'AnnualRevenue']), annualRevenue)
+	WebUI.setText(findTestObject('Salesforce/Account/Masterdata_fields_Pageobjects/inputfields', [('inputfields') : 'Phone']), phone)
+
+    WebUI.setText(findTestObject('Salesforce/Account/Masterdata_fields_Pageobjects/inputfields', [('inputfields') : 'Fax']), fax)
 
     WebUI.scrollToElement(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/fax'), 2)
 

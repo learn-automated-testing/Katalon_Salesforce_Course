@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven/20240321_205026/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/Test Cases/Testcases_Salesforce/Accounts/3_CreateDataDrivenInputFieldsComboFields/20240321_212750/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven', new TestCaseBinding('Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Testcases_Salesforce/Accounts/3_CreateDataDrivenInputFieldsComboFields', new TestCaseBinding('Test Cases/Testcases_Salesforce/Accounts/3_CreateDataDrivenInputFieldsComboFields',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

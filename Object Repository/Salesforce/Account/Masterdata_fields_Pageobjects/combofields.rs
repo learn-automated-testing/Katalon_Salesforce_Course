@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>typeofaccount</name>
+   <name>combofields</name>
    <tag></tag>
    <elementGuidId>1cc72cc3-4570-41c1-8a78-2f0de3e53fd6</elementGuidId>
    <selectorCollection>
@@ -10,12 +10,12 @@
          <value>//*[@title='Other']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button.slds-button.slds-button_icon.slds-button_icon-container > lightning-primitive-icon</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@title='${comboboxitem}']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.slds-button.slds-button_icon.slds-button_icon-container > lightning-primitive-icon</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

@@ -49,6 +49,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/inputfields",
+      "brokenLocator": "//*[@name\u003d\u0027@{inputfields}\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//*[@name\u003d\u0027Name\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/inputfields_XPATH.png"
     }
   ]
 }
