@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Account,Chrome 123.0.0.0,,,22-03-2024 02:42:36,22-03-2024 02:43:15,"39,587s",FAILED
+,,,,,,,
+Test Cases/Testcases_Salesforce/Accounts/1_Create,Chrome 123.0.0.0,,,22-03-2024 02:42:36,22-03-2024 02:43:15,"39,509s",FAILED
+Start listener action : sampleBeforeTestCase3,Chrome 123.0.0.0,,,22-03-2024 02:42:36,22-03-2024 02:42:36,"0,122s",PASSED
+"callTestCase(findTestCase(""Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce""), [:], STOP_ON_FAILURE)",Chrome 123.0.0.0,first we login to Salesforce,,22-03-2024 02:42:36,22-03-2024 02:42:46,"9,778s",PASSED
+"callTestCase(findTestCase(""Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts""), [:], STOP_ON_FAILURE)",Chrome 123.0.0.0,we search for accounts via aura,,22-03-2024 02:42:46,22-03-2024 02:42:49,"2,868s",PASSED
+"callTestCase(findTestCase(""Testcases_Salesforce/TestCaseReuseables/Account/Create_Account""), [:], STOP_ON_FAILURE)",Chrome 123.0.0.0,we create a account,,22-03-2024 02:42:49,22-03-2024 02:43:15,"26,667s",FAILED
+Start listener action : sampleAfterTestCase2,Chrome 123.0.0.0,,,22-03-2024 02:43:15,22-03-2024 02:43:15,"0,006s",PASSED

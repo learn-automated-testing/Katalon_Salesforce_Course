@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Account" time="41.6" tests="1" failures="0" errors="0">
+   <testsuite name="TS_Account" tests="1" failures="0" errors="0" time="41.6" skipped="0" timestamp="22-03-2024T02:44:01" hostname="r.vanderhorst - localhost" id="Test Suites/TS_Account">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/r.vanderhorst/develop/katalon_salesforce/Reports/20240322_024356/TS_Account/20240322_024357"/>
+         <property name="logFiles" value="/Users/r.vanderhorst/develop/katalon_salesforce/Reports/20240322_024356/TS_Account/20240322_024357/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="r.vanderhorst - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.2.212"/>
+         <property name="browser" value="Chrome 123.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="456f00e55ef866c8a76e278dc61a3e81"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven" time="41.522" classname="Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven" status="PASSED">
+         <system-out><![CDATA[22-03-2024T02:44:01 - [TEST_CASE][PASSED] - Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven: Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven
+
+22-03-2024T02:44:01 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase3: null
+
+22-03-2024T02:44:01 - [TEST_STEP][PASSED] - if (SKIP_REMAINING_TESTS == true): null
+
+22-03-2024T02:44:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce' successfully
+
+22-03-2024T02:44:02 - [TEST_CASE][PASSED] - Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce: Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce
+
+22-03-2024T02:44:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+22-03-2024T02:44:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+22-03-2024T02:44:02 - [MESSAGE][INFO] - User set preference: ['args', '[--disable-notifications]']
+
+22-03-2024T02:44:02 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+22-03-2024T02:44:04 - [TEST_STEP][PASSED] - webKeywords.ApplicationFunction.enhanced_SetViewportSize(2650, 1400): webKeywords.ApplicationFunction.enhanced_SetViewportSize is PASSED
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - Execute JavaScript 'return (window.innerWidth || 0)' successfully
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - Execute JavaScript 'return (window.innerHeight || 0)' successfully
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - Execute JavaScript 'return (window.devicePixelRatio || 1)' successfully
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1325 and height = 839
+
+22-03-2024T02:44:04 - [MESSAGE][PASSED] - webKeywords.ApplicationFunction.enhanced_SetViewportSize is PASSED
+
+22-03-2024T02:44:04 - [TEST_STEP][PASSED] - navigateToUrl(APP_URL): Navigate to 'https://login.salesforce.com' successfully
+
+22-03-2024T02:44:05 - [MESSAGE][PASSED] - Navigate to 'https://login.salesforce.com' successfully
+
+22-03-2024T02:44:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Salesforce/Page_Login  Salesforce/input_Username_username"), USERNAME): Text 'ralphvanderhorst@learnautomatedtesting.com' is set on object 'Object Repository/Salesforce/Page_Login  Salesforce/input_Username_username'
+
+22-03-2024T02:44:06 - [MESSAGE][PASSED] - Text 'ralphvanderhorst@learnautomatedtesting.com' is set on object 'Object Repository/Salesforce/Page_Login  Salesforce/input_Username_username'
+
+22-03-2024T02:44:06 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Page_Login  Salesforce/input_Password_pw"), PASSWORD): Text 'JasonStatham12' is set on object 'Object Repository/Salesforce/Page_Login  Salesforce/input_Password_pw'
+
+22-03-2024T02:44:06 - [MESSAGE][PASSED] - Text 'JasonStatham12' is set on object 'Object Repository/Salesforce/Page_Login  Salesforce/input_Password_pw'
+
+22-03-2024T02:44:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Page_Login  Salesforce/input_Password_Login")): Object: 'Object Repository/Salesforce/Page_Login  Salesforce/input_Password_Login' is clicked on
+
+22-03-2024T02:44:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Page_Login  Salesforce/input_Password_Login' is clicked on
+
+22-03-2024T02:44:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Salesforce/Home_Page_Salesforce/Sales_Manager_menu"), 10): Object 'Object Repository/Salesforce/Home_Page_Salesforce/Sales_Manager_menu' is present
+
+22-03-2024T02:44:11 - [MESSAGE][PASSED] - Object 'Object Repository/Salesforce/Home_Page_Salesforce/Sales_Manager_menu' is present
+
+22-03-2024T02:44:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Login into Salesforce' successfully
+
+22-03-2024T02:44:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts' successfully
+
+22-03-2024T02:44:12 - [TEST_CASE][PASSED] - Test Cases/Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts: Test Cases/Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts
+
+22-03-2024T02:44:12 - [TEST_STEP][PASSED] - click(findTestObject("Salesforce/SalesforceAura/aura")): Object: 'Object Repository/Salesforce/SalesforceAura/aura' is clicked on
+
+22-03-2024T02:44:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/SalesforceAura/aura' is clicked on
+
+22-03-2024T02:44:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+22-03-2024T02:44:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+22-03-2024T02:44:14 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("Salesforce/SalesforceAura/salesbutton"), STOP_ON_FAILURE): Object: 'Object Repository/Salesforce/SalesforceAura/salesbutton' is clicked on
+
+22-03-2024T02:44:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/SalesforceAura/salesbutton' is clicked on
+
+22-03-2024T02:44:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/SearchSalesForceAura/SearchForAccounts' successfully
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Testcases_Salesforce/TestCaseReuseables/Account/Create_AccountDataDriven"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/Account/Create_AccountDataDriven' successfully
+
+22-03-2024T02:44:15 - [TEST_CASE][PASSED] - Test Cases/Testcases_Salesforce/TestCaseReuseables/Account/Create_AccountDataDriven: Test Cases/Testcases_Salesforce/TestCaseReuseables/Account/Create_AccountDataDriven
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - accountData = findTestData("AccountTestData"): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - rowCount = accountData.getRowNumbers(): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - for ([i = 1, i <= rowCount, (i++)]): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - accountName = accountData.getValue("AccountName", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - site = accountData.getValue("Site", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - annualRevenue = accountData.getValue("AnnualRevenue", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - phone = accountData.getValue("Phone", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - fax = accountData.getValue("Fax", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - typeOfAccount = accountData.getValue("TypeOfAccount", i): null
+
+22-03-2024T02:44:15 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts")): Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts' is clicked on
+
+22-03-2024T02:44:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts' is clicked on
+
+22-03-2024T02:44:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/New")): Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/New' is clicked on
+
+22-03-2024T02:44:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/New' is clicked on
+
+22-03-2024T02:44:19 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Account_name"), accountName): Text 'Learn' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Account_name'
+
+22-03-2024T02:44:20 - [MESSAGE][PASSED] - Text 'Learn' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Account_name'
+
+22-03-2024T02:44:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+22-03-2024T02:44:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+22-03-2024T02:44:21 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/account_site"), site): Text 'learnautomated' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/account_site'
+
+22-03-2024T02:44:22 - [MESSAGE][PASSED] - Text 'learnautomated' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/account_site'
+
+22-03-2024T02:44:22 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue"), annualRevenue): Text '4454' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'
+
+22-03-2024T02:44:23 - [MESSAGE][PASSED] - Text '4454' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'
+
+22-03-2024T02:44:23 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Phone"), phone): Text '063454554' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Phone'
+
+22-03-2024T02:44:24 - [MESSAGE][PASSED] - Text '063454554' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Phone'
+
+22-03-2024T02:44:24 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/fax"), fax): Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax'
+
+22-03-2024T02:44:24 - [MESSAGE][PASSED] - Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax'
+
+22-03-2024T02:44:24 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/fax"), 2): Scroll to object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax' successfully
+
+22-03-2024T02:44:25 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax' successfully
+
+22-03-2024T02:44:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type")): Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type' is clicked on
+
+22-03-2024T02:44:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type' is clicked on
+
+22-03-2024T02:44:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Salesforce/Account/Masterdata_fields_Pageobjects/combofields", ["comboboxitem":typeOfAccount]), 20): Object 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clickable
+
+22-03-2024T02:44:26 - [MESSAGE][PASSED] - Object 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clickable
+
+22-03-2024T02:44:26 - [TEST_STEP][PASSED] - click(findTestObject("Salesforce/Account/Masterdata_fields_Pageobjects/combofields", ["comboboxitem":typeOfAccount])): Object: 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clicked on
+
+22-03-2024T02:44:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clicked on
+
+22-03-2024T02:44:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save")): Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save' is clicked on
+
+22-03-2024T02:44:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save' is clicked on
+
+22-03-2024T02:44:27 - [TEST_STEP][PASSED] - accountCreated = getText(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d")): Text of object 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d' is: 'Account "Learn" was created.'
+
+22-03-2024T02:44:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d' is: 'Account "Learn" was created.'
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - println("Account Created: " + accountCreated): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - accountName = accountData.getValue("AccountName", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - site = accountData.getValue("Site", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - annualRevenue = accountData.getValue("AnnualRevenue", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - phone = accountData.getValue("Phone", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - fax = accountData.getValue("Fax", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - typeOfAccount = accountData.getValue("TypeOfAccount", i): null
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - enhancedClick(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts")): Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts' is clicked on
+
+22-03-2024T02:44:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_Accounts' is clicked on
+
+22-03-2024T02:44:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/New")): Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/New' is clicked on
+
+22-03-2024T02:44:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/New' is clicked on
+
+22-03-2024T02:44:31 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Account_name"), accountName): Text 'Learnauto' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Account_name'
+
+22-03-2024T02:44:33 - [MESSAGE][PASSED] - Text 'Learnauto' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Account_name'
+
+22-03-2024T02:44:33 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+22-03-2024T02:44:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+22-03-2024T02:44:34 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/account_site"), site): Text 'learnautomated' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/account_site'
+
+22-03-2024T02:44:34 - [MESSAGE][PASSED] - Text 'learnautomated' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/account_site'
+
+22-03-2024T02:44:34 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue"), annualRevenue): Text '010324555' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'
+
+22-03-2024T02:44:35 - [MESSAGE][PASSED] - Text '010324555' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Annual_revenue'
+
+22-03-2024T02:44:35 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/Phone"), phone): Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Phone'
+
+22-03-2024T02:44:37 - [MESSAGE][PASSED] - Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Phone'
+
+22-03-2024T02:44:37 - [TEST_STEP][PASSED] - setText(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/fax"), fax): Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax'
+
+22-03-2024T02:44:37 - [MESSAGE][PASSED] - Text '23434' is set on object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax'
+
+22-03-2024T02:44:37 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Salesforce/Account/Accounts_fields_Salesforce/fax"), 2): Scroll to object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax' successfully
+
+22-03-2024T02:44:38 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/fax' successfully
+
+22-03-2024T02:44:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type")): Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type' is clicked on
+
+22-03-2024T02:44:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type' is clicked on
+
+22-03-2024T02:44:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Salesforce/Account/Masterdata_fields_Pageobjects/combofields", ["comboboxitem":typeOfAccount]), 20): Object 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clickable
+
+22-03-2024T02:44:39 - [MESSAGE][PASSED] - Object 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clickable
+
+22-03-2024T02:44:39 - [TEST_STEP][PASSED] - click(findTestObject("Salesforce/Account/Masterdata_fields_Pageobjects/combofields", ["comboboxitem":typeOfAccount])): Object: 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clicked on
+
+22-03-2024T02:44:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Masterdata_fields_Pageobjects/combofields' is clicked on
+
+22-03-2024T02:44:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save")): Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save' is clicked on
+
+22-03-2024T02:44:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Salesforce/Account/Accounts_fields_Salesforce/Save' is clicked on
+
+22-03-2024T02:44:40 - [TEST_STEP][PASSED] - accountCreated = getText(findTestObject("Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d")): Text of object 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d' is: 'Account "Learnauto" was created.'
+
+22-03-2024T02:44:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d' is: 'Account "Learnauto" was created.'
+
+22-03-2024T02:44:42 - [TEST_STEP][PASSED] - println("Account Created: " + accountCreated): null
+
+22-03-2024T02:44:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/Account/Create_AccountDataDriven' successfully
+
+22-03-2024T02:44:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Close application"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Close application' successfully
+
+22-03-2024T02:44:42 - [TEST_CASE][PASSED] - Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Close application: Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Close application
+
+22-03-2024T02:44:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+22-03-2024T02:44:43 - [MESSAGE][PASSED] - Browser is closed
+
+22-03-2024T02:44:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Testcases_Salesforce/TestCaseReuseables/StartStopApplication/Close application' successfully
+
+22-03-2024T02:44:43 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase2: null
+
+22-03-2024T02:44:43 - [TEST_STEP][PASSED] - if (testCaseStatus == "FAILED"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[22-03-2024T02:44:01 - [TEST_SUITE][PASSED] - TS_Account: Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

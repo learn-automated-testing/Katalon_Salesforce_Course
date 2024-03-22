@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>e33a4182-ca54-4d3d-912e-55eecf997b6c</testSuiteGuid>
    <testCaseLink>
-      <guid>55267fdd-5d0f-4360-9c88-9c9dd96aa4b4</guid>
+      <guid>364f5b78-a8a6-41bc-ae0d-844db9e2911b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Testcases_Salesforce/Accounts/1_Create</testCaseId>
+      <testCaseId>Test Cases/Testcases_Salesforce/Accounts/2_CreateDataDriven</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
