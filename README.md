@@ -9,7 +9,7 @@ This project demonstrates the automation of Salesforce applications using Katalo
 
 ## Salesforce Developer Edition
 
-For those looking to download and set up a Salesforce Developer Edition account, detailed instructions and resources are available on the [LearnAutomatedTesting.com portal](https://learnautomatedtesting.com). This resource provides step-by-step guidance on setting up your Salesforce environment, which is essential for following along with the automation examples provided in this project.
+For those looking to download and set up a Salesforce Developer Edition account, detailed instructions and resources are available on the [LearnAutomatedTesting.com portal](https://learnautomatedtesting.com/course/katalon-and-salesforce/). This resource provides step-by-step guidance on setting up your Salesforce environment, which is essential for following along with the automation examples provided in this project.
 
 ## Use Cases Covered
 
