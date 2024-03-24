@@ -34,6 +34,11 @@ public class GlobalVariable {
      */
     public static Object SKIP_REMAINING_TESTS
      
+    /**
+     * <p></p>
+     */
+    public static Object token
+     
 
     static {
         try {
@@ -46,6 +51,7 @@ public class GlobalVariable {
             PASSWORD = selectedVariables['PASSWORD']
             caseNumber = selectedVariables['caseNumber']
             SKIP_REMAINING_TESTS = selectedVariables['SKIP_REMAINING_TESTS']
+            token = selectedVariables['token']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -1,0 +1,43 @@
+{
+  "keywordFileContentHash": "2B331055D17D048AAE4138B46F3D8D3D",
+  "keywordClasses": [
+    {
+      "name": "oauthflowapi.OAuth2",
+      "keywordMethods": [
+        {
+          "name": "getOAuth2Token",
+          "parameters": [
+            {
+              "name": "clientId",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "clientSecret",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

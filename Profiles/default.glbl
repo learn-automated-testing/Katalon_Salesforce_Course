@@ -29,4 +29,9 @@
       <initValue>'false'</initValue>
       <name>SKIP_REMAINING_TESTS</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'00D7R000005GtSn!AQ8AQFprTbc_4..siOfSEA0SbTAGok7wxpx_ywNOHfr5F_2CwK_Q_5lRtvDOu0NyxrnLLvKh9ctBGqzZsl1yppwb5QbTJUqS'</initValue>
+      <name>token</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,35 @@
+{
+  "keywordFileContentHash": "41D254EA431E6CAE8D5819E1E17EDBE8",
+  "keywordClasses": [
+    {
+      "name": "environment.EnvironmentLoader",
+      "keywordMethods": [
+        {
+          "name": "loadEnvironmentVariables",
+          "parameters": [
+            {
+              "name": "filename",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Attempts to load environment variables from a .env file or falls back to system environment variables.\n\t * @param filename Name of the .env file.\n\t * @return Map containing the loaded environment variables.\n\t * @throws IOException If the .env file cannot be read.\n\t */"
+        },
+        {
+          "name": "loadEnvironmentVariables",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
