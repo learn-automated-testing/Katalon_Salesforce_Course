@@ -10,9 +10,9 @@ import groovy.json.JsonSlurper
 
 class OAuth2 {
 	@Keyword
-	def getOAuth2Token(String clientId, String clientSecret) {
+	def getOAuth2Token(String clientId, String clientSecret,String url) {
 		// Define the request URL
-		String url = "https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/oauth2/token"
+
 
 		// Define the request body with actual clientId and clientSecret
 		String body = "grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}"

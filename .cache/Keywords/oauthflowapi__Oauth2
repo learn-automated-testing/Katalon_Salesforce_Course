@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "2B331055D17D048AAE4138B46F3D8D3D",
+  "keywordFileContentHash": "A1D764D81F6699980836498A0E916D2E",
   "keywordClasses": [
     {
       "name": "oauthflowapi.OAuth2",
@@ -32,12 +32,24 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
+            },
+            {
+              "name": "url",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

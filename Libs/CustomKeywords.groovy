@@ -35,8 +35,10 @@ def static "webKeywords.ApplicationFunction.enhanced_SetViewportSize"(
 
 def static "oauthflowapi.OAuth2.getOAuth2Token"(
     	String clientId	
-     , 	String clientSecret	) {
+     , 	String clientSecret	
+     , 	String url	) {
     (new oauthflowapi.OAuth2()).getOAuth2Token(
         	clientId
-         , 	clientSecret)
+         , 	clientSecret
+         , 	url)
 }

@@ -39,8 +39,7 @@ WebUI.scrollToElement(findTestObject('Salesforce/Account/Accounts_fields_Salesfo
 
 WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields_Salesforce/type'))
 
-WebUI.waitForElementClickable(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccountother'), 
-    20)
+WebUI.waitForElementClickable(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccountother'), 20)
 
 WebUI.click(findTestObject('Salesforce/Account/Accounts_fields_Salesforce/typeofaccountother'))
 
@@ -49,4 +48,5 @@ WebUI.click(findTestObject('Object Repository/Salesforce/Account/Accounts_fields
 not_run: accountCreated = WebUI.getText(findTestObject('Object Repository/Salesforce/Account/Accounts_List_Salesforce/span_toastMessage slds-text-heading--small _f3870d'), 
     FailureHandling.STOP_ON_FAILURE)
 
+WebUI.acceptAlert()
 

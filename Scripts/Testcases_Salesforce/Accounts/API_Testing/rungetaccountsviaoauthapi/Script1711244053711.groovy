@@ -39,7 +39,7 @@ if (clientId == null || clientSecret == null) {
 }
 
 
-String token = new OAuth2().getOAuth2Token(clientId, clientSecret)
+String token = new OAuth2().getOAuth2Token(clientId, clientSecret,url)
 
 // Optional: Print the token for debugging
 println("OAuth2 Token: " + token)
