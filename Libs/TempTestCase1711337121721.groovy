@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample/20240324_034109/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/20240325_042521/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample', new TestCaseBinding('Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('', new TestCaseBinding('',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

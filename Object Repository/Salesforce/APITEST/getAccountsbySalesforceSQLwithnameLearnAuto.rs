@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getAccountsbySalesforceSQL</name>
+   <name>getAccountsbySalesforceSQLwithnameLearnAuto</name>
    <tag></tag>
    <elementGuidId>4aa2c245-cfaf-4779-9b59-71a408132815</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
@@ -11,7 +11,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>00D7R000005GtSn!AQ8AQFprTbc_4..siOfSEA0SbTAGok7wxpx_ywNOHfr5F_2CwK_Q_5lRtvDOu0NyxrnLLvKh9ctBGqzZsl1yppwb5QbTJUqS</value>
+            <value>00D7R000005GtSn!AQ8AQB7el6Kzj8i6VA9tHPEBSaG8UubJOeHg1Sg8VHvGCR75H9SD3BY0Zg1sLDWFO7oaWyTB7izKDxOdvpNBWtdvXTTFm8_O</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -39,14 +39,14 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer 00D7R000005GtSn!AQ8AQFprTbc_4..siOfSEA0SbTAGok7wxpx_ywNOHfr5F_2CwK_Q_5lRtvDOu0NyxrnLLvKh9ctBGqzZsl1yppwb5QbTJUqS</value>
-      <webElementGuid>953a86f9-0c43-408f-a7a9-8a8c331f78c8</webElementGuid>
+      <value>Bearer 00D7R000005GtSn!AQ8AQB7el6Kzj8i6VA9tHPEBSaG8UubJOeHg1Sg8VHvGCR75H9SD3BY0Zg1sLDWFO7oaWyTB7izKDxOdvpNBWtdvXTTFm8_O</value>
+      <webElementGuid>0ffdc143-ca7b-4af3-8369-e731f2ea7442</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.3.2</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/data/v60.0/query/?q=Select Name from Account</restUrl>
+   <restUrl>https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/data/v60.0/query/?q=Select id, Name from Account where name = 'learnauto'</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample/20240324_033850/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/bt/mm3_zhns7njf3vgwnjvc0j4c0000gn/T/Katalon/20240325_040855/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample', new TestCaseBinding('Test Cases/Testcases_Salesforce/Accounts/API_Testing/jsonslurperexample',[:]), FailureHandling.STOP_ON_FAILURE , false)
-    
+        TestCaseMain.runWSVerificationScript(new TestCaseBinding('',[:]), 'import static org.assertj.core.api.Assertions.*\n\nimport com.kms.katalon.core.testobject.RequestObject\nimport com.kms.katalon.core.testobject.ResponseObject\nimport com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS\nimport com.kms.katalon.core.webservice.verification.WSResponseManager\n\nimport groovy.json.JsonSlurper\nimport internal.GlobalVariable as GlobalVariable\n\nRequestObject request = WSResponseManager.getInstance().getCurrentRequest()\n\nResponseObject response = WSResponseManager.getInstance().getCurrentResponse()', FailureHandling.STOP_ON_FAILURE, true)
+

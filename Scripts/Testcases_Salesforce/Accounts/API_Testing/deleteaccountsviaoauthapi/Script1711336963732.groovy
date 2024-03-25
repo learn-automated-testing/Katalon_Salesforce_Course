@@ -42,6 +42,9 @@ println("OAuth2 Token: " + token)
 GlobalVariable.token = token
 // Assume you have a RequestObject
 RequestObject request = findTestObject('Object Repository/Salesforce/APITEST/getAccountsbySalesforceSQLwithnameLearnAuto')
+
+
+
 // Update the Authorization header to use the global variable TOKEN
 request.setHttpHeaderProperties(Arrays.asList(
 	new TestObjectProperty("Authorization", ConditionType.EQUALS, "Bearer " + GlobalVariable.token)
@@ -60,4 +63,36 @@ if (statusCode == 200) {
 	println("Request was successful.")
 } else {
 	println("Request failed.")
+}
+
+
+
+// Extract account IDs
+def accountIds = jsonResponse.records.collect { it.Id }
+
+// Function to delete an account by ID
+void deleteAccountById(String id) {
+    String deleteUrl = "https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/data/v60.0/sobjects/Account/${id}"
+    RequestObject deleteRequest = new RequestObject("DeleteAccount")
+    deleteRequest.setRestRequestMethod("DELETE")
+    deleteRequest.setRestUrl(deleteUrl)
+    deleteRequest.setHttpHeaderProperties(Arrays.asList(
+        new TestObjectProperty("Authorization", ConditionType.EQUALS, "Bearer " + GlobalVariable.token),
+        // Add other necessary headers here
+    ))
+
+    // Sending the DELETE request
+    ResponseObject deleteResponse = WS.sendRequest(deleteRequest)
+    int deleteStatusCode = WS.getResponseStatusCode(deleteResponse)
+    println("Delete Status Code for Account ID ${id}: " + deleteStatusCode)
+    if (deleteStatusCode == 204) { // HTTP 204 is typically returned for successful DELETE operations
+        println("Successfully deleted Account ID: ${id}")
+    } else {
+        println("Failed to delete Account ID: ${id}. Response: " + deleteResponse.getResponseText())
+    }
+}
+
+// Loop through account IDs and delete them
+accountIds.each { id ->
+    deleteAccountById(id)
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>DeleteAccountApiSalesforce</name>
+   <name>getAllAccountsbySalesforceSQL</name>
    <tag></tag>
-   <elementGuidId>1b67cd75-9825-4405-b55a-517fe88d7d86</elementGuidId>
+   <elementGuidId>54bc633c-2966-4e34-8cfa-051277227bc7</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -11,7 +11,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>00D7R000005GtSn!AQ8AQO85SXWZ.VYAqqXQga_H8I5wAUHVFvlqVFjYb9LTPOKLnGp7zUb2dqImty3zvLCPaNGPkot2GJjO4q8CKqAF9mHqYCBm</value>
+            <value>00D7R000005GtSn!AQ8AQB7el6Kzj8i6VA9tHPEBSaG8UubJOeHg1Sg8VHvGCR75H9SD3BY0Zg1sLDWFO7oaWyTB7izKDxOdvpNBWtdvXTTFm8_O</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -20,21 +20,33 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>text/plain</value>
+      <webElementGuid>eccc9d37-e060-4e90-8e95-ca7bf1a1231e</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer 00D7R000005GtSn!AQ8AQO85SXWZ.VYAqqXQga_H8I5wAUHVFvlqVFjYb9LTPOKLnGp7zUb2dqImty3zvLCPaNGPkot2GJjO4q8CKqAF9mHqYCBm</value>
-      <webElementGuid>d9db9723-9eb4-448f-9efe-23a987786708</webElementGuid>
+      <value>Bearer 00D7R000005GtSn!AQ8AQB7el6Kzj8i6VA9tHPEBSaG8UubJOeHg1Sg8VHvGCR75H9SD3BY0Zg1sLDWFO7oaWyTB7izKDxOdvpNBWtdvXTTFm8_O</value>
+      <webElementGuid>0ffdc143-ca7b-4af3-8369-e731f2ea7442</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.3.2</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/data/v60.0/sobjects/Account/${id}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://bsure-digitalbv-dev-ed.develop.my.salesforce.com/services/data/v60.0/query/?q=Select id, Name from Account</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
